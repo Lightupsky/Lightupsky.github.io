@@ -6,7 +6,7 @@ categories: lyrics
 
 <img src="https://cdn.jsdelivr.net/gh/pic-cdn/cdn2@271455233a2e9cb703da51dc0eb3f5a6e9311727/2022/01/23/6f00dab588b6fd32134d508b41793c62.png" width = "300" height = "250" alt="素颜cover" align=center />
 
-{% include embed.html url="https://i.y.qq.com/v8/playsong.html?songid=125376257" %}
+{% include embed.html url="https://y.music.163.com/m/song?id=167827" %}
 
 *前奏：*  
 屏幕前  
