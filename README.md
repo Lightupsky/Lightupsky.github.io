@@ -4,9 +4,10 @@ permalink: "/about/"
 layout: page
 ---
 
-## Installation
+## 我
 
-Just fork this [repository](https://github.com/niklasbuschmann/contrast) and adjust the `_config.yml` to use with [Github Pages](https://pages.github.com/) and your page is done.
+我是灯火烛天，一名普通初三生。  
+下面还没有改awa
 
 ## Features
 
