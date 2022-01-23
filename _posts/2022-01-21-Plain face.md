@@ -6,7 +6,7 @@ categories: lyrics
 
 <img src="https://cdn.jsdelivr.net/gh/pic-cdn/cdn2@271455233a2e9cb703da51dc0eb3f5a6e9311727/2022/01/23/6f00dab588b6fd32134d508b41793c62.png" width = "300" height = "250" alt="素颜cover" align=center />
 
-{% include embed.html url="music.163.com/outchain/player?type=2&id=167827&auto=1&height=66" %}
+<embed src="//music.163.com/style/swf/widget.swf?sid=167827&type=2&auto=1&width=278&height=32" width="298" height="52"  allowNetworking="all"></embed>
 
 *前奏：*  
 屏幕前  
