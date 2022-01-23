@@ -7,20 +7,16 @@ layout: page
 ## 我
 
 我是灯火烛天，一名普通初三生。  
-下面还没有改awa
+下面正在修改awa
 
-## Features
+## 兴趣
 
- - supports dark mode on macOS Mojave
- - optional sidebar
- - MathJax support
- - no external ressources
- - included archive page
- - supports pagination
- - feed generation
- - responsive
- - syntax highlighting
- - supports comments via [disqus](https://disqus.com/) or [isso](http://posativ.org/isso/)
+ - 音乐，从填词到调混  *B站有一些demo*
+ - 短篇小说创作
+ - 记录生活日常
+ - 分享由事而生的感悟
+ - ......
+ 
 
 ## Based on
 
