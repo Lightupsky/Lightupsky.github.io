@@ -6,7 +6,9 @@ categories: lyrics
 
 <img src="https://cdn.jsdelivr.net/gh/pic-cdn/cdn2@271455233a2e9cb703da51dc0eb3f5a6e9311727/2022/01/23/6f00dab588b6fd32134d508b41793c62.png" width = "300" height = "250" alt="素颜cover" align=center />
 
-*前奏*  
+{% include embed.html url="music.163.com/outchain/player?type=2&id=167827&auto=1&height=66" %}
+
+*前奏：*  
 屏幕前  
 我被束缚 几度  
 就好像是心脏中枪的蛊  
