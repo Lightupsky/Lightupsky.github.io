@@ -6,7 +6,6 @@ categories: lyrics
 
 <img src="https://cdn.jsdelivr.net/gh/pic-cdn/cdn2@271455233a2e9cb703da51dc0eb3f5a6e9311727/2022/01/23/6f00dab588b6fd32134d508b41793c62.png" width = "300" height = "250" alt="素颜cover" align=center />
 
-{% include embed.html url="https://m.bilibili.com/video/BV1s4411Y7JM" %}
 
 *前奏：*  
 屏幕前  
@@ -16,6 +15,7 @@ categories: lyrics
 如果 我的面具 被清除
 
 
+{% include embed.html url="https://m.bilibili.com/video/BV1s4411Y7JM" %}  
 ------分割线------  
 这是一个困倦的晚上  
 晚上自己偷偷地冲浪  
