@@ -4,7 +4,7 @@ layout: post
 categories: lyrics
 ---
 
-![素颜Cover](https://cdn.jsdelivr.net/gh/pic-cdn/cdn2@271455233a2e9cb703da51dc0eb3f5a6e9311727/2022/01/23/6f00dab588b6fd32134d508b41793c62.png)
+![素颜Cover](https://cdn.jsdelivr.net/gh/pic-cdn/cdn2@271455233a2e9cb703da51dc0eb3f5a6e9311727/2022/01/23/6f00dab588b6fd32134d508b41793c62.png/resize,p_60)
 
 *前奏*  
 屏幕前  
