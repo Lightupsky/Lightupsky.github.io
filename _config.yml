@@ -2,7 +2,7 @@ title: "Lightupsky's blog"
 author: "Lightupsky"
 description: "Written by <b style=\"color: #f45;\"Light&lt;upsky</b>"
 permalink: /:title/
-lang: "cn"
+lang: "zh"
 excerpt_separator: "\n\n\n"
 date_format: "%B %d, %Y"
 
