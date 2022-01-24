@@ -16,9 +16,9 @@ minimal: false             # use a dark header
 # Menu
 
 navigation:                # accepts {file, title, url, icon, sidebaricon}
-  - {file: "index.html", title："Home"}
+  - {file: "index.html", title: "Home"}
   - {file: "README.md"}
-  - {file: "Announcement.html"}
+  - {file: "Announcement.html", title: "公告"}
 
 external:                  # shows a footer with social links - for available icons see fontawesome.com/icons
   - {title: Mail, icon: envelope, url: "mailto:lightupsky123@gmail.com"}
