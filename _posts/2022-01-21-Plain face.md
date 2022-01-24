@@ -15,7 +15,11 @@ categories: lyrics
 如果 我的面具 被清除
 
 
-{% include embed.html url="https://m.bilibili.com/video/BV1s4411Y7JM" %}  
+<meting-js
+    server="netease"
+    type="song"
+    id="167827">
+</meting-js>
 ------分割线------  
 这是一个困倦的晚上  
 晚上自己偷偷地冲浪  
