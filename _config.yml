@@ -6,6 +6,10 @@ lang: "zh"
 excerpt_separator: "\n\n\n"
 date_format: "%B %d, %Y"
 
+busuanzi_count:
+  enable: true                          # 启用不蒜子
+  total_visitors: true                  # 网站总访客数
+  
 # Layout
 
 show_excerpts: true        # show article excerpts on the home page
