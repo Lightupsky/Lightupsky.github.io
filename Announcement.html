@@ -1,41 +1,63 @@
 <!doctype html>
 <html lang="zh">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<head>
+		<!-- Required meta tags -->
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="css/bootstrap.min.css">  
- 
-	<!-- Custom CSS -->
-    <link rel="stylesheet" href="css/custom.css">
+		<!-- Bootstrap CSS -->
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+
+		<!-- Custom CSS -->
+		<link rel="stylesheet" href="css/custom.css">
 
 
-    <title>公告测试</title>
-  </head>
-  <body> 
-         <div class="content">
-	 <section class="intro">
-		 <span id="busuanzi_container_site_pv">本站总访问量<span id="busuanzi_value_site_pv"></span>次</span>
+		<title>公告</title>
+	</head>
+	<body>
+		<style type="text/css">
+			body{
+				background: url("https://pic1.zhimg.com/v2-52ce0e6e9154a9f742a3a44dad3d3fd9_r.jpg?source=1940ef5c") no-repeat center center fixed;
+		                /*兼容浏览器版本*/
+		                -webkit-background-size: cover;
+		                -o-background-size: cover;                
+		                background-size: cover;
+			}
+			</style>
+		<div class="content">
+			<section class="intro">
 				<h1> 更新日志</h1>
-                <p>2022-01-23 19：30左右 博客成功上线 </p>
-                
-                <p>2022-01-23 22：30左右 填充一些内容，优化CDN，成功插入了一张图片 </p>
-                  
-                <p>2022-01-24 引入开源项目Aplayer与MetingJS，实现内嵌音乐播放<br>实现了相当简陋的被动式公告，目前存放网站更新日志<br>插入iframe代码测试成功，即可以嵌入部分视频网站播放页<br>Bug fix：解决顶栏双下巴问题<br>注：开通了一个月免费腾讯云解析企业版，不知道感知强不强 </p>
+				
+				<script type="text/javascript"> const ap = new APlayer({ container: document.getElementById('aplayer01'), lrcType: 3, audio: [{ name: '所念皆星河', artist: 'CJM', url: 'https://music.163.com/#/song?id=1384026889', cover: 'http://p1.music.126.net/M34HFzLO2xhDLuX_zEALKA==/109951164291347934.jpg?param=130y130', lrc: '纯音乐', }] }); </script>
+				
+				<p>2022-01-23 19：30左右 博客成功上线 </p>
 
-                <p>持续更新中...... </p>
+				<p>2022-01-23 22：30左右 填充一些内容，优化CDN，成功插入了一张图片 </p>
 
-		  </section>
+				<p>2022-01-24
+					引入开源项目Aplayer与MetingJS，实现内嵌音乐播放<br>实现了相当简陋的被动式公告，目前存放网站更新日志<br>插入iframe代码测试成功，即可以嵌入部分视频网站播放页<br>Bug
+					fix：解决顶栏双下巴问题<br>注：开通了一个月免费腾讯云解析企业版，不知道感知强不强 </p>
+					
+				<p>2022-05-14
+					实现网页访问量计次大失败，版本回退；对更新日志进行了一定的美化。</p>
+				<p>持续更新中...... </p>
+				<a href="https://lightupsky.xyz"  target="opentype">返回主页</a>
 
-	    </div>        
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-	  
+			</section>
 
- </body>
+		</div>
+		<!-- Optional JavaScript -->
+		<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+		<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+			integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
+		</script>
+		<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+			integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+		</script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+			integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
+		</script>
+
+
+	</body>
 </html>
