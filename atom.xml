@@ -1,0 +1,481 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>https://lightupsky.xyz</id>
+    <title>灯引烛光</title>
+    <updated>2022-08-15T05:14:19.085Z</updated>
+    <generator>https://github.com/jpmonette/feed</generator>
+    <link rel="alternate" href="https://lightupsky.xyz"/>
+    <link rel="self" href="https://lightupsky.xyz/atom.xml"/>
+    <subtitle>灯火烛天日，归期会有时。</subtitle>
+    <logo>https://lightupsky.xyz/images/avatar.png</logo>
+    <icon>https://lightupsky.xyz/favicon.ico</icon>
+    <rights>All rights reserved 2022, 灯引烛光</rights>
+    <entry>
+        <title type="html"><![CDATA[在Gridea上使用Aplayer+MetingJS]]></title>
+        <id>https://lightupsky.xyz/post/useaplayer/</id>
+        <link href="https://lightupsky.xyz/post/useaplayer/">
+        </link>
+        <updated>2022-08-15T03:33:35.000Z</updated>
+        <summary type="html"><![CDATA[<p>好耶ヽ(✿ﾟ▽ﾟ)ノ</p>
+]]></summary>
+        <content type="html"><![CDATA[<p>好耶ヽ(✿ﾟ▽ﾟ)ノ</p>
+<!-- more -->
+<p><meting-js
+    server="tencent"
+    type="song"
+    id="000akynZ2Rbro5"><br>
+</meting-js><br>
+如上所示，现在博客已经可以嵌入APlayer来播放在线音频了，但过程并不是非常顺利，之前直接在Github操作时只需要在仓库放置aplayer的js，并在文章嵌入代码就可以【开箱即用】，但我并不知道Gridea中如何修改生成html的&lt;head&gt;标签。<br>
+通过开发人员工具，可以发现我使用的主题Pure已经引入了几个js，如highlight，所以我打开了主题文件夹，默认在<strong>C://Document/Gridea/themes/你使用的主题</strong>。<br>
+<em>接下来的内容均以pure这个主题为例，原理相同，其余主题也可以参考。</em></p>
+<p>首先引入Aplayer.min.css，找到templates/includes/head.ejs,在其中插入<br>
+&lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdnjs.cloudflare.com/ajax/libs/aplayer/1.10.1/APlayer.min.css&quot;&gt;<br>
+接下来在templates/post.ejs的&lt;head&gt;标签嵌入<br>
+&lt;script src=&quot;https://unpkg.com/meting@2.0.1/dist/Meting.min.js&quot;&gt;</script><br>
+&lt;script src=&quot;https://cdnjs.cloudflare.com/ajax/libs/aplayer/1.10.1/APlayer.min.js&quot;&gt;</script><br>
+这样之后就可以使用Aplayer了，同理，我们也可以自定义引入任何js。</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[我从什么时候起涉猎个人博客，以及未来。]]></title>
+        <id>https://lightupsky.xyz/post/bloghistory/</id>
+        <link href="https://lightupsky.xyz/post/bloghistory/">
+        </link>
+        <updated>2022-08-13T10:53:33.000Z</updated>
+        <summary type="html"><![CDATA[<p>四处为客，博览众生。</p>
+]]></summary>
+        <content type="html"><![CDATA[<p>四处为客，博览众生。</p>
+<!-- more -->
+<p>2019年末，大约是10月份，我在酷安刷到了一款初创产品【Baklib】注册送一年高级版的活动。<br>
+我想：<strong>还有这种好事？</strong><br>
+更早的几年，追溯到小学，我就喜欢下课拿本本子乱涂乱画，写点有的没的。在小学五年级的时候，我在一节漫长而无事的自修课上写了一篇关于怎么给Android Root的文章，我接触搞机比这更早一些，大概在2016年，那时候酷安V7还未正式发布——现在已经是V12了。<br>
+因此，我便早有写点文章的习惯，也有分享、传播的意愿，借着这个契机，在Baklib创建了第一个线上博客。在那一年时间里，我写了多少呢？<br>
+<em>四篇😀</em><br>
+你不能对一个拖延习惯的人有着过高的要求，更何况并没有什么人看（其实也找不到）我写的内容。年纪小啥都喜欢锐评一嘴，我记得有写关于996的，关于227的，关于丁真的...阅历浅薄的我自然给不出多少真知灼见，只是一些无谓的“冲塔”泄愤，当热情过去，大海退潮，只剩一地鸡毛。<br>
+今日我在必应搜索，还能窥见那时文章的标题：<br>
+<img src="https://lightupsky.xyz/post-images/1660390869209.png" alt="" loading="lazy"><br>
+初创企业的承诺，就像林力健大师的音道一样善变。在这篇发布于2019年11月20号的<a href="https://zhuanlan.zhihu.com/p/92795744" title="终身免费享有“企业版”使⽤权限">知乎文章</a>中，Baklib承诺在2020年前的注册用户终身享有企业版免费，然而现在，企业版仅限单域名，更高级的付费套餐，需要绑定自己的域名才保证稳定性等，我理解这是企业的权宜之计，但这也让我决定不再使用这些博客托管平台。</p>
+<p><strong>我要自己搭个博客网站！</strong><br>
+关于个人博客，一直搁置到2022年1月23日，才有了动静。通过油管的一个教学视频（<em>电脑更换，收藏链接迷失在了硬盘里</em>），我用一晚上时间借助开源博客主题Contrast和GithubPages上线了新的博客。在我Github仓库的master分支就可以看到当时博客的内容。<br>
+生命贵在折腾，几个痛点让我最终没有坚持这么运作：</p>
+<h1 id="1markdown语法太规范了">1.Markdown语法“太规范了”</h1>
+<p>这的确是我的问题，我的所有文章都保存在【纯纯写作】APP上，因为当时我在手机端的写作效率更高，并且接触手机要方便得多，在Markdown模式下我依然是回车换行。但我没有注意到设置里的可选项，也没有特意查看Markdown的文档。这个疏忽为我发布本地的文章增加了很多工作量，当我把文章复制到Github中，我惊讶地发现，预览时的文章一个换行都没有。<br>
+引用Markdown官方文档中的一段话：</p>
+<blockquote>
+<p>几乎每个 Markdown 应用程序都支持两个或多个空格进行换行，称为 结尾空格（trailing whitespace) 的方式，但这是有争议的，因为很难在编辑器中直接看到空格，并且很多人在每个句子后面都会有意或无意地添加两个空格。由于这个原因，你可能要使用除结尾空格以外的其它方式来换行。幸运的是，几乎每个 Markdown 应用程序都支持另一种换行方式：HTML 的 &lt;br&gt; 标签。</p>
+</blockquote>
+<p>每篇文章都要重新排版，懒癌犯了，并且的确没有产出什么新内容，这是其一。</p>
+<h1 id="2繁琐的内容更新流程">2.繁琐的内容更新流程</h1>
+<p>现在选择Gridea编辑博客的最大原因就是，当我写完一篇，只需轻点一下左下角的同步按钮，我的文章就会在1分钟内更新到我的网页。我只管写就是了。<br>
+但在之前，如果我写完了一篇文章，那我会手动上传.md文件，编辑文件名为主题可读取的格式，编辑内容增加标签和内容标识（post/layout...），检查无误后push并等待Action构建完毕。</p>
+<h1 id="3所见非所得的开盲盒式编辑">3.所见非所得的开盲盒式编辑</h1>
+<p>看完在本地搭建博客环境，通过localhost预览博客页面的教程后，我选择了放弃...<br>
+<strong>当然的确可以通过使用git push，对先前的文章查找替换规范格式，如上述所说搭建环境，但我只是写个文章，也许有点本末倒置。</strong></p>
+<p>这次的改造大概会稳定一段时间了，我也会开始产出一些新的内容，把之前相对满意的内容发上来。<br>
+关于这个博客的未来，就像我的人生一样，充满了不确定性，随遇而安。<br>
+<sub>也许哪天就关站跑路（</sub></p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[【寄事本】被生命所厌弃]]></title>
+        <id>https://lightupsky.xyz/post/behated/</id>
+        <link href="https://lightupsky.xyz/post/behated/">
+        </link>
+        <updated>2022-08-13T06:18:07.000Z</updated>
+        <summary type="html"><![CDATA[<p>《寄事本》第二份叙述类词作，融合了我道听途说的家庭暴力，赌博、烟草酒精、出轨......从孩子的角度，这种压力全部是无妄之灾，而他们的下场，也玩笑般的被注定了，他们被生命厌弃着，在我眼中。</p>
+]]></summary>
+        <content type="html"><![CDATA[<p>《寄事本》第二份叙述类词作，融合了我道听途说的家庭暴力，赌博、烟草酒精、出轨......从孩子的角度，这种压力全部是无妄之灾，而他们的下场，也玩笑般的被注定了，他们被生命厌弃着，在我眼中。</p>
+<!-- more -->
+<p>原曲：命に嫌われている。 (被生命所厌恶。)<br>
+<meting-js
+    server="tencent"
+    type="song"
+    id="000ieAg026QdTa"><br>
+</meting-js></p>
+<p>抛弃我的酒精还有麻将桌<br>
+为什么把选择权又交给我<br>
+明明我是一枚你们得不到<br>
+弃子在自甘堕落<br>
+听说爱与和平就快要实现<br>
+反正这些目标我都看不见<br>
+只是素未谋面的远房亲戚<br>
+仿佛咫尺之间<br>
+多理你一言一语换来的是沉默<br>
+玻璃的厨房窗户也蒙纱上了锁<br>
+隐约中我听见的成因是犯的错<br>
+反身扼住我的喉<br>
+家里的清汤淡寡我已经能接受<br>
+昨夜呜咽到半瞎引诱着同桌提问<br>
+鼓起勇气那救生船说“太过敏感”<br>
+太过漠视了其他</p>
+<p>上天的爱平等公正得无可挑剔<br>
+这种话真令我嗤之以鼻<br>
+以为平凡的人却享受着幸福<br>
+感叹之中顺便慢性自杀<br>
+我是立在悬崖边盛开的红花<br>
+孤芳自赏不是我的标签别强加<br>
+何等卑微渺小低贱的我<br>
+不该奢求得到任何一点关注</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[【寄事本】UnknownMotherGoose]]></title>
+        <id>https://lightupsky.xyz/post/emama/</id>
+        <link href="https://lightupsky.xyz/post/emama/">
+        </link>
+        <updated>2022-08-13T06:14:53.000Z</updated>
+        <summary type="html"><![CDATA[<p><strong>关于网络暴力的胡诌之言。</strong></p>
+]]></summary>
+        <content type="html"><![CDATA[<p><strong>关于网络暴力的胡诌之言。</strong></p>
+<!-- more -->
+<p>原曲：Unknown Mother Goose-wowaka<br>
+Rest in peace.<br>
+<meting-js
+    server="tencent"
+    type="song"
+    id="000uhpPG3Rc91F"><br>
+</meting-js></p>
+<p>趾高气昂在博客里挥斥方遒<br>
+狰狞的脸上阴云密布<br>
+说不过你立刻开始复读遁地<br>
+三言两语逼入穷途末路<br>
+若能打开笼罩在身上的黑盒<br>
+每一句话都制作成笔录<br>
+迫不及待亲自揭开的光的庇护<br>
+现实世界也在黑暗中得到救赎<br>
+公开审理认罪认罚的你悔悟<br>
+愚昧的我不小心被那些人蒙蔽<br>
+牢内的他勤恳干活绝不出格<br>
+支付自由来偿还赎身<br>
+留下案底 浮生半日赋闲在家<br>
+总想着 从事着欢愉你我<br>
+不拉赞助 这也许能避免争端<br>
+引燃电火花 焚烧战争余烬</p>
+<p>胆怯和忌惮渐出于虹霓 已显露于虹霓<br>
+版权纠纷依然无休止地遭遇 无休止地讨檄<br>
+你怎么能给我解答视频隐喻或另有动机<br>
+说不过就偷换概念精神胜利在无人区高高在上<br>
+道德的警察忙着把得到的珍品摔裂以示清白<br>
+像一场滑铁卢<br>
+如果说 年少的气盛是不懂欣赏<br>
+现在互联网 不再是风景如画的车站<br>
+没有船 载着我驶向梦想的余光<br>
+面熟的伙伴 换上了磨平棱角的新装<br>
+攻击欲望强烈的作什么回答<br>
+寻求谅解的我有搞错什么吗<br>
+若押送虚拟法庭 就能将所作所为和刑罚一并矢量化<br>
+昨天的我也依旧随遇而安呐<br>
+今天的我也依旧沉迷摆烂呐<br>
+默默拉响警笛<br>
+和狱中觥筹交错</p>
+<p>（间奏）</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[手写的从前]]></title>
+        <id>https://lightupsky.xyz/post/sxdcq/</id>
+        <link href="https://lightupsky.xyz/post/sxdcq/">
+        </link>
+        <updated>2022-08-13T06:09:36.000Z</updated>
+        <summary type="html"><![CDATA[<p>脱离了特定的环境，“土豆”不过是谁都能套上的马甲。物是人非，令人感慨。</p>
+]]></summary>
+        <content type="html"><![CDATA[<p>脱离了特定的环境，“土豆”不过是谁都能套上的马甲。物是人非，令人感慨。</p>
+<!-- more -->
+<p>原曲：手写的从前-周杰伦</p>
+<p>勾线笔总是断在眼底<br>
+这倒影扰乱了我心绪<br>
+回忆被包装已成定局<br>
+你是我将要 回不去的风景<br>
+星桥横过你我的距离<br>
+却狠心反方向远去<br>
+而你旁敲侧击我的消息<br>
+等山随平原尽<br>
+等发现歌单里的暗语<br>
+我重温午后的阳光<br>
+痴子从仰慕到心伤<br>
+跟多年前一样 我们暧昧地唱<br>
+青葱又嘹亮</p>
+<p>我看着你的脸 笔刷着素颜<br>
+青春的答卷 我磕绊地填<br>
+还记得你踮起脚 素面朝天<br>
+屏住气不岔言 心跳声在和弦<br>
+我看着你的脸 笔刷着素颜<br>
+情人节咖啡 半价的缺陷<br>
+我们的 画面定格 勾指起誓<br>
+那甜美的相恋<br>
+也抵不过别离的长篇</p>
+<p>土豆需要甘露 幼兽踏上旅途<br>
+翻过穿过丛林 破除重重迷雾<br>
+隔绝我们的距离 是人心和任性<br>
+哭过后的决定 付出只有敬行<br>
+我傻傻等待 傻傻等破镜重圆<br>
+等春等夏等秋等冬 等你的答卷<br>
+私自定的期限 悄悄过去很远<br>
+而我想我不该<br>
+期待记忆里的画卷<br>
+梦本是死物<br>
+土豆本是食物<br>
+焦虑在质问<br>
+你是黑铁还是青铜<br>
+该怎么去形容<br>
+听说你想去市重<br>
+微笑点头 掩盖我不安的惨痛<br>
+过去时常反转 或许我表现失常<br>
+或许任何一个你没出现过的地方<br>
+拥抱在聊天栏 被压成一幅边框<br>
+宣告完结为我蓄谋两年前的剧场</p>
+<p>我看着你的脸 笔刷着素颜<br>
+青春的答卷 我磕绊地填<br>
+还记得你踮起脚 素面朝天<br>
+屏住气不岔言 心跳声在和弦<br>
+我看着你的脸 笔刷着素颜<br>
+情人节咖啡 下一杯再见<br>
+我们的 画面定格 勾指起誓<br>
+那甜美的相恋<br>
+也抵不过别离的长篇<br>
+我重温西下的夕阳<br>
+怀揣着七下的彷徨<br>
+初见时的迷茫 跟多年前一样<br>
+酿造着忧伤</p>
+<p>我看着你的脸 轻刷着和弦<br>
+初恋是争辩、吉他和鼓点<br>
+还记得广场公园谈论曲编<br>
+校园旁便利店 欢声耳畔翩翩<br>
+我看着你的脸 笔刷着素颜<br>
+初恋的扬帆 被浪打搁浅<br>
+风雨后土豆迎着彩虹呈现<br>
+当恋情已走远<br>
+我将不留遗憾地攀缘</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[过客]]></title>
+        <id>https://lightupsky.xyz/post/pasway/</id>
+        <link href="https://lightupsky.xyz/post/pasway/">
+        </link>
+        <updated>2022-05-29T06:03:19.000Z</updated>
+        <summary type="html"><![CDATA[<h2 id="原曲模特-李荣浩他的故事我的故事">原曲：模特-李荣浩<br>
+他的故事，我的故事。</h2>
+]]></summary>
+        <content type="html"><![CDATA[<h2 id="原曲模特-李荣浩他的故事我的故事">原曲：模特-李荣浩<br>
+他的故事，我的故事。</h2>
+<!-- more -->
+<p>些许华丽辞藻 为笔下的斑斓而增色<br>
+用沉默的表情 在公交车上扮演乘客<br>
+我脆弱的接受 不再奢望自己被爱着<br>
+像无数次与你擦上肩的过客<br>
+除了笔以外 我还能拿起什么<br>
+聚光灯以外 我还是无名角色<br>
+象牙塔以外 谎话都不用检测<br>
+在音乐以外 我谈论的是什么<br>
+在焦虑以外 我拥有的是什么<br>
+在心脏之外 是否还在跳动着<br>
+记得 你的温柔依然光泽<br>
+他的赞誉我还听着<br>
+谁说我们不是还清醒的<br>
+趁着我还年轻你还爱过<br>
+我们都还青涩<br>
+就这么 自由快乐简单地活着<br>
+像坚韧的竹节 在雨滴拍打中不褪色<br>
+像父母的唠叨 又钻入了厚厚的龟壳<br>
+是沉浮的人海 连地上的尘埃都淹了<br>
+是不能继续在冷漠里做过客<br>
+除了功以外 我还能诉说什么<br>
+除了颂以外 我还能做些什么<br>
+除了比以外 人有几分算及格<br>
+在闲逸以外 在孤单的是什么<br>
+名为家的爱 身不由己为什么<br>
+在离开以前 能否再握住你的<br>
+记得 你的眼睛骤然亮了<br>
+我的声音没了干涩<br>
+谁说相遇不能化解忐忑<br>
+乘着同一部的准点班车<br>
+当几分钟乘客（将你晚风枕着）<br>
+没什么 至少证明我不是过客<br>
+记得<br>
+你的双臂将我挽着<br>
+我的眼睛依然清澈<br>
+谁说萍水相逢不能抉择<br>
+趁着我会远行你会分隔<br>
+每一秒都吻着<br>
+没什么 至少证明我不是过客</p>
+<p>灯火烛天. 2022.05.29 11:17</p>
+<p>2022.06.02 09:09 完成修改部分词汇+调混，渲染出过客V1.mp3/flac，可在微信视频号“灯火烛天Lus”查看。</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[【东百往事】狠活的幸福理论]]></title>
+        <id>https://lightupsky.xyz/post/wndxfll/</id>
+        <link href="https://lightupsky.xyz/post/wndxfll/">
+        </link>
+        <updated>2022-05-15T06:11:13.000Z</updated>
+        <content type="html"><![CDATA[<p>原曲：文乃的幸福理论-IA/Jin<br>
+<em>无参（也没有歌词）的vsqx工程配布到了vsqx分享平台，搜索“文乃的幸福理论”即可。</em></p>
+<p>“团长就是歌姬吧”<br>
+音响和旋律一起银杏化<br>
+没有拉胯<br>
+在众目睽睽的时候<br>
+最后一个狠活<br>
+打火机咬下</p>
+<p>沈阳大街火车站<br>
+是你我会记住的开头<br>
+卑鄙的大飞脚<br>
+你是个跑不出戏的角色<br>
+小亮给他整个活<br>
+后空翻出了一片愠色<br>
+你是否曾经因为我而开怀大笑过<br>
+国民声优唐老鸭<br>
+灵魂还捆绑在那根绳索<br>
+有谁记得他来过<br>
+发表了独立的宣称<br>
+补档狠活标准<br>
+脱下戏服叼身份证<br>
+一切狂欢消失的进程<br>
+敬你好果汁</p>
+<p>那视频里的我 抽着烟弹<br>
+但现实的我 难免 日落西山<br>
+彪姐 不再浪漫<br>
+疯狂只剩遗憾<br>
+即使我开口<br>
+没活就一直在批判<br>
+沈阳的大街<br>
+人流涌<br>
+不见他音容<br>
+也许迟到<br>
+杀马特与five刀 的战争<br>
+创业卖奶茶的我 却满盘皆空<br>
+多年以后 渐渐无奈地懂<br>
+沈阳的大街<br>
+风萧萧<br>
+我释怀的笑<br>
+笑声盘旋在半山腰<br>
+曾把腰子创掉<br>
+过往的辉煌都付之一笑<br>
+会有人记得<br>
+那沈阳的活</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[群清]]></title>
+        <id>https://lightupsky.xyz/post/blue/</id>
+        <link href="https://lightupsky.xyz/post/blue/">
+        </link>
+        <updated>2022-02-02T15:30:10.000Z</updated>
+        <summary type="html"><![CDATA[<blockquote>
+<p>群青，群清，写在今年初，想到毕业后的各奔东西，或许有了别样的意味。</p>
+</blockquote>
+]]></summary>
+        <content type="html"><![CDATA[<blockquote>
+<p>群青，群清，写在今年初，想到毕业后的各奔东西，或许有了别样的意味。</p>
+</blockquote>
+<!-- more -->
+<p>原曲：群青-YOASOBI<br>
+词：灯火烛天</p>
+<div id="aplayer01"></div>
+<script type="text/javascript">
+    const ap = new APlayer({
+        container: document.getElementById('aplayer01'),
+        audio: [{
+            name: '群清',
+            artist: '灯火烛天',
+            url: 'https://fastly.jsdelivr.net/gh/Lightupsky/CDN/blueV2.mp3',
+            cover: 'https://bkimg.cdn.bcebos.com/pic/a8ec8a13632762d0f703b75b4dbd1ffa513d2797688f'
+        }]
+    });
+</script>
+<p>啊<br>
+又冲浪到夜里<br>
+疲惫的星期一<br>
+踏上熟悉归路<br>
+用标准结局 打开 有何错误<br>
+毕竟我们的思路都已被拘束<br>
+很促狭<br>
+一条布满荆棘<br>
+一条无人问津<br>
+只因还未披露<br>
+被刺伤的皮肤<br>
+虽然不会说话<br>
+默默祈祷<br>
+<em>Hook:</em><br>
+计划 计划 在死线前夕<br>
+察觉时间的紧急<br>
+思路瞬间清晰<br>
+过着 三点一线 往返与奔波<br>
+直到福报被夺取 干预</p>
+<p>啊——<br>
+聊天群里 滚动的 很急促<br>
+表情包 还有各处传 聊天记录<br>
+可是我 没心情 没意见 没去处<br>
+活在真实世界向虚拟触摸<br>
+suki呐 很多话 送的花 很落伍<br>
+利刃将我与幻想做着切割<br>
+所以我 安静地<br>
+把红色按钮逐一地按下</p>
+<p>啊<br>
+收到你的回信<br>
+语气似曾相识<br>
+朋友也没法做<br>
+转发到群里 渴望 温暖包裹<br>
+可我的悲剧只不过增添笑果<br>
+很失落 透过眼泪遥望<br>
+我仿佛又回到<br>
+枝江未完的梦<br>
+释放温柔信号<br>
+聆听我的心潮<br>
+伤口愈合缝补</p>
+<p>啊——<br>
+《主播女孩...》还躺在游戏库<br>
+像过气的男二号走投无路<br>
+隐藏在 窗口和 面具的 粉饰下<br>
+故事真相就交给未来解读<br>
+你的话 他的话 压力增 阴暗度<br>
+游戏中映出了我肖像倒影<br>
+所以我 奋力地<br>
+脑海恶魔挥之不<br>
+去</p>
+<p>（啊——）<br>
+相当离谱 世界相当离谱<br>
+离开象牙塔的学生陷入憧憬迷途<br>
+啊 向往蚍蜉 为何向往蚍蜉<br>
+用有自知之明的头脑撼动根深蒂固<br>
+资格选拔的答卷<br>
+收取通知书的画面<br>
+不注意震撼之余扩张的黑色漩涡<br>
+一并吞没 来不及反应的 天真笑容</p>
+<p>当我期待 那反转的结局<br>
+惊觉此意 是生得无趣<br>
+银装素裹的大雪天<br>
+脱落衣物 像过失的奴婢<br>
+祈求主的庇护<br>
+可依凭 的港湾 凭忆寻得乡土<br>
+随风沙一同千里与你跨越<br>
+这救赎之黎明<br>
+在纷雪六月前能否抵达</p>
+<p>啊——<br>
+山路回环<br>
+等到了哪阵风<br>
+即使不属于我<br>
+也曾衷心祝福<br>
+在异国 念乡故 久阔别 舍昼夜<br>
+只为一线生机在阴阳交界<br>
+悲剧发生很多 戏剧化的神作<br>
+未抵达就目睹帝国陷落<br>
+还怎么 振作起<br>
+面对无法质疑的降维打击<br>
+啊<br>
+只剩下 群友们<br>
+语音聊天欢笑依旧豁达<br>
+<em>Hook:</em><br>
+有人 死后 似一只幽灵<br>
+漂浮于神州大地<br>
+投射灰色阴影<br>
+乌云 密布迭起 领奏交响曲<br>
+那心底朦胧恐惧 足以凝固空气<br>
+也有人 骨肉难觅 双眼仍锐利<br>
+正气凛然的光膜 笼罩脚下祖国<br>
+穿过 密云散播 希望与和平<br>
+无惧风雨中挺立<br>
+无论是否群清</p>
+]]></content>
+    </entry>
+</feed>
